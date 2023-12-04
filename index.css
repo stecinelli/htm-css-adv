@@ -55,11 +55,31 @@ section {
   width: 50%;
   margin: 2px;
   border-left: 5px solid white;
+  align-items: stretch;
 
   & img {
+    align-self: center;
+    width: 90%;
     margin-top: 20px;
     margin-bottom: 10px;
   }
+  & audio {
+    align-self: center;
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: #20314c;
+}
+
+audio::-webkit-media-controls-current-time-display {
+  color: #fff;
+}
+audio::-webkit-media-controls-time-remaining-display {
+  color: #fff;
 }
 
 .player__menu {
